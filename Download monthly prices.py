@@ -1,0 +1,24 @@
+import yfinance as yf
+import pandas as pd
+import os
+
+os.chdir(r"C:\Users\Viktor\Desktop\UNI MUNSTER 2024-2026\Introduction to Advanced Finance\Case Study 1\Data for 2b")
+
+tickers = [
+    "MMM", "AXP", "AAPL", "BA", "CAT", "CVX", "CSCO", "KO", "DIS",
+    "DOW", "XOM", "GS", "HD", "INTC", "IBM", "JNJ", "JPM", "MCD", "MRK",
+    "MSFT", "NKE", "PFE", "PG", "RTX", "TRV", "UNH", "VZ", "V", "WBA", "WMT"
+]
+
+start_date = "2023-12-29" 
+end_date = "2023-12-31" 
+stock_data = yf.download(tickers, start=start_date, end=end_date, interval='1d')['Adj Close']
+
+end_of_month_data = stock_data.resample('M').last()
+
+end_of_month_data.index = end_of_month_data.index.tz_localize(None)
+
+end_of_month_data.reset_index(inplace=True)
+end_of_month_data.to_excel("PX_CLOSE_29Dec23.xlsx", index=False)
+
+print(end_of_month_data)
