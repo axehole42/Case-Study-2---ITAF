@@ -1,7 +1,3 @@
-
-"""
-'This version of the code includes the Optimal Risky Portfolio
-
 ####################### WITH 0.35% Interest Rate #################################
 
 
