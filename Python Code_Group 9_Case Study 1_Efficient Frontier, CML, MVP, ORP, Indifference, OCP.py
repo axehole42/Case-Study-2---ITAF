@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 16 20:07:00 2024
-
-@author: Viktor Tsonevski
-
-
-"""
 
 'This version of the code includes the Optimal Complete Portfolio, as well as the investors indifference curves for A =3, I ran this in Google Collab, might not work in Spyder'
 
@@ -24,7 +16,7 @@ import plotly.io as pio
 import os
 import kaleido
 
-os.chdir(r"C:\Users\Viktor\Desktop\UNI MUNSTER 2024-2026\Introduction to Advanced Finance\Case Study 1\")
+os.chdir(r"C:\Users\USER\Desktop")
 
 
 'List of stock tickers'
