@@ -2,7 +2,7 @@ import yfinance as yf
 import pandas as pd
 import os
 
-os.chdir(r"C:\Users\Viktor\Desktop\UNI MUNSTER 2024-2026\Introduction to Advanced Finance\Case Study 1\Data for 2b")
+os.chdir(r"C:\Users\X\Desktop")
 
 tickers = [
     "MMM", "AXP", "AAPL", "BA", "CAT", "CVX", "CSCO", "KO", "DIS",
