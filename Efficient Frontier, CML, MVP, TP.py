@@ -1,6 +1,6 @@
 
 """
-'This version of the code includes the Optimal Risky Portfolio, I ran this in Google Collab, might not work in Spyder'
+'This version of the code includes the Optimal Risky Portfolio
 
 ####################### WITH 0.35% Interest Rate #################################
 
